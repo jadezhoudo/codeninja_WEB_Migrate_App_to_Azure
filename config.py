@@ -14,7 +14,7 @@ class BaseConfig:
     SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI') or DB_URL
     CONFERENCE_ID = 1
     SECRET_KEY = 'LWd2tzlprdGHCIPHTd4tp5SBFgDszm'
-    SERVICE_BUS_CONNECTION_STRING = 'Endpoint=sb://notificationqueuecodeninja.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=P9CPBWvBayHKQXCNMyv+F5AjpCF5pS7C9+ASbEuJJB4='  # TODO: Update value
+    SERVICE_BUS_CONNECTION_STRING = 'Endpoint=sb://notificationqueuecodeninja.servicebus.windows.net/;SharedAccessKeyName=admin;SharedAccessKey=DUvckyPv/7fZQ/8jQgDNbb1ONiGO2Md3S+ASbC/acJk=;EntityPath=notificationqueue'  # TODO: Update value
     SERVICE_BUS_QUEUE_NAME = 'notificationqueue'
     ADMIN_EMAIL_ADDRESS: 'info@techconf.com'
     SENDGRID_API_KEY = ''  # Configuration not required, required SendGrid Account
